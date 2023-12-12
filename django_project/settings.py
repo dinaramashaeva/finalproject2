@@ -32,12 +32,13 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",  # new
     "django.contrib.staticfiles",
     # 3rd Party
+    "rest_framework",
     "crispy_forms",
     "crispy_bootstrap5",
     # Local
-    "accounts",
-    "pages",
-    "articles",
+    "accounts.apps.AccountsConfig",
+    "pages.apps.PagesConfig",
+    "articles.apps.ArticlesConfig",
 ]
 
 MIDDLEWARE = [
